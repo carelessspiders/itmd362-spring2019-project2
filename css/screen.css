@@ -37,11 +37,11 @@ main {
   width: 100%;
   background-color: #e5e5e5;
   overflow: hidden;
-      padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 nav{
-   z-index: 1;
+  z-index: 1;
 }
 
 section{
@@ -53,7 +53,8 @@ section{
 
 footer{
   padding: 1em;
-  background-color: grey;
+  background-color: #4a64ff;
+  color: #ffffff;
   text-align: center;
   box-shadow: 0px 0px 1px #888888;
 }
@@ -69,7 +70,7 @@ h1 {
 } 
 
 h1.margin{
-    margin: 0.83em 0;
+  margin: 0.83em 0;
 }
 
 h2 {
@@ -80,7 +81,7 @@ h2 {
 }
 
 h2.margin{
-   margin: 0.83em 0;
+  margin: 0.83em 0;
 }
 
 
@@ -114,7 +115,7 @@ h5 {
 }
 
 h5.margin{
-    margin: 1.67em 0;
+  margin: 1.67em 0;
 }
 
 h6 {
@@ -144,10 +145,6 @@ p.margin{
   line-height: 1.25rem; /* 20px = 16px * 1.25em */
   font-weight: 400; /* regular */
   letter-spacing: .0178571429em; /* .25 / 14px */
-  /*margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;*/
 }
 
 .subtitle {
@@ -181,9 +178,6 @@ p.margin{
   padding: 0 0 1rem 0;
 }
 
-.margin
-
-
 /* ========================  2. Responsive Media ======================== */
 img, audio, video {
   display: block;
@@ -198,7 +192,12 @@ img {
 nav{
   overflow: hidden;
   box-shadow: 1px 1px 4px #888888;
-  background-color: white;
+  background-color: #001dca;
+  color: #ffffff;
+}
+
+#menu{
+  color: #ffffff;
 }
 
 /* Company name/logo */
@@ -252,20 +251,21 @@ nav{
 }
 
 .topnav ul li{
-  border-top: solid 2px grey; 
+  
 }
 
 .topnav a {
   display: block;
   color: black;
-  background-color: lightgrey;
+  background-color: #0745ff;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: whitesmoke;
+  background-color: #4a64ff;
 }
 
 #navbars{
@@ -277,26 +277,185 @@ nav{
 }
 
 .dropdown a {
-  background-color: grey;
+  background-color: #6f71ff;
   color: white;
   padding: 8px 12px;
 }
 
 .dropdown a:hover {
-  background-color: dimgrey;
+  background-color: #9fa6ff;
 }
-
 
 /*===============sub-sub navbar item ============!!Edited!!*/
 #submenudropdown, #submenudropdown li a.submenubtn
 {
-  background-color: darkgray;
+  background-color: #6f71ff;
+  color: white;
 }
 #submenudropdown li a.submenubtn:hover
 {
-  background-color: dimgray;
+  background-color: #9fa6ff;
 }
 
+/* ========================  3.5 Slideshow ======================== */
+#event_signup{
+  text-align: center;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+#meet_the_team{
+  text-align: center;
+}
+
+/* BEGIN SLIDESHOW */
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+/* slideshow images */
+
+.slideshow img{
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow ul li{
+  line-height: 0;
+  height: 100%;
+}
+
+.image-is-visible{
+  display: list-item; 
+}
+
+.image{
+  display: none;
+}
+
+/* slideshow buttons */
+.slideshow .button{
+  width: 4rem;
+  border: none;
+  background: white;
+  opacity: .6;
+}
+
+#slideshow-left{
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  left: 0%;
+  z-index: 0;
+}
+
+#slideshow-right {
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  right: 0%;
+  z-index: 0;
+}
+
+/* slideshow dots */
+.dot{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: #6f71ff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.dot-is-selected{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: #001dca;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#slideshow-dots{
+  margin: .5rem;
+  clear: both;
+  display: block;
+  text-align: center;
+
+}
+
+.smallimg{
+  display: block;
+}
+
+.bigimg{
+  display: none;
+}
+
+/* END SLIDESHOw */
+
+/* BEGIN IMAGE GRID */
+
+.grid-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-col{
+  padding: 16px;
+  flex-basis: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.grid-col img{
+  width: 100%;
+  position: relative;
+  /* set this to fix sizing issues*/
+  max-width: 232px;
+  /* Round portraits */
+  border-radius: 50%;
+}
+
+.grid-container{
+  margin: 0 auto;
+}
+
+/* ======================== 3.6 Sign Up Page ======================== */
+
+#event_signup{
+  text-align: center;
+}
+
+input{
+  width: 100%
+}
+
+input.button{
+  margin: .5rem 0;
+  padding: 0 .25rem;
+}
+
+input.button{
+  max-width: 600px;
+}
+
+#signupbtn, #gotoformbtn, #submit{
+  background-color: #ffc107;
+  color: #000000;
+  border-color: #fff350;
+}
 
 /* ========================  4. media queries ======================== */
 
@@ -306,6 +465,18 @@ nav{
 
   .dropdown{
     display: none;
+  }
+
+  .grid-col{
+    flex-basis: 50%;
+  }
+
+  .smallimg{
+    display: none;
+  }
+
+  .bigimg{
+    display: block;
   }
 
 }
@@ -350,7 +521,7 @@ nav{
 
   .topnav a {
     display: inline-block;
-    background-color: white;
+    background-color: #001dca;
   }
 
   /* make nav bar visible */
@@ -362,36 +533,50 @@ nav{
     display: none;
   }
 
-  #container{
+  .container{
     max-width: 1280px;
     margin: 0 auto;
   }
 
   /* make subnav bar look good */
-  
+
   .dropdown{
     overflow: hidden;
     position: fixed;
-    background-color: grey;
+    background-color: #0745ff;
     text-align: right;
     width: 100%;
     left: 0;
     margin: 0 auto;
   }
-  
+
   .dropdown li{
     display: block;
   }
 
   .dropdown a {
-    background-color: grey;
+    background-color: #0745ff;
+    color: #ffffff;
     display: inline-block;
   }
-  
+
   #submenu{
     display: block;
     max-width: 1280px;
     margin: 0 auto;
+    background-color: #6f71ff;
+    
+  } 
+  
+  .grid-col{
+    flex-basis: 33%;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
 }
@@ -410,7 +595,15 @@ nav{
     display: inline-block;
   }
 
-  #container{
+  .container{
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
@@ -431,11 +624,27 @@ nav{
     display: inline-block;
   }
 
-  #container{
+  .container{
     max-width: 1600px;
     width: 1600px;
     margin: 0 auto;
     overflow: hidden;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
+    max-width: 1600px;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .navbox{
+    background-color: grey;
+    color: white;
+    padding: 8px 12px;
+    margin: 0 auto;
+    width: 100%;
   }
 
 }

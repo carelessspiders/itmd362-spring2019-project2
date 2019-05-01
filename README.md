@@ -22,11 +22,11 @@ Engage in agile, iterative web design and development within a team-based work-f
 
 2. [x] **First Deliverable: Task Analysis** Create a Basecamp post describing your work in progress. Title the post with your team name and project number (example: Team Wonder Women - Project 2). Your post should include the full names of all team members, and a screen-by-screen task analysis of your redesign. Use screen shots and simple text to explain your plan of action.
 
-3. [ ] **Second Deliverable: First draft** Update your project 2 Basecamp post with the URL to your group GitHub repository, live link (GitHub pages), and two questions eliciting feedback from fellow students. 
+3. [x] **Second Deliverable: First draft** Update your project 2 Basecamp post with the URL to your group GitHub repository, live link (GitHub pages), and two questions eliciting feedback from fellow students. 
 
-4. [ ] **Comments:** Give constructive comments to help at least three other teams.
+4. [x] **Comments:** Give constructive comments to help at least three other teams.
 
-5. [ ] **Third Deliverable:** Revise your team Basecamp post under Project 2 to add links to each member's individual fork of the group GitHub repository. Individual forks should include README.md files with following:
+5. [x] **Third Deliverable:** Revise your team Basecamp post under Project 2 to add links to each member's individual fork of the group GitHub repository. Individual forks should include README.md files with following:
 
     * A 3-4 sentence self-critique memo of your project and your progress in class to this point.
 
@@ -43,28 +43,28 @@ Must pass HTML and CSS validators!
 
 ### HTML requirements
 
-1. [ ] Only structural, semantic uses of HTML elements and attributes. Absolutely no table markup, break tags, or any other use of HTML to achieve a particular page layout.
+1. [x] Only structural, semantic uses of HTML elements and attributes. Absolutely no table markup, break tags, or any other use of HTML to achieve a particular page layout.
 
-2. [ ] Valid HTML form elements, written in conjunction with <label> tags and the for attribute.
+2. [x Valid HTML form elements, written in conjunction with <label> tags and the for attribute.
 
-3. [ ] Semantically structured text-based HTML content to accompany any media elements (image, audio, video).
+3. [x] Semantically structured text-based HTML content to accompany any media elements (image, audio, video).
 
 ### CSS requirements
 
-1. [ ] CSS file should open with a set of reset styles. Meyers, and the Form section of Normalize.
+1. [x] CSS file should open with a set of reset styles. Meyers, and the Form section of Normalize.
 
-2. [ ] Use at least two min-width media queries to enhance your mobile-first styles for larger screens.
+2. [x] Use at least two min-width media queries to enhance your mobile-first styles for larger screens.
 
 ### JavaScript requirements
 
-1. [ ] JavaScript that throws no uncaught errors and is loaded unobtrusively (no JavaScript event attributes in your HTML, in other words; attach events to any elements requiring interaction).
+1. [x] JavaScript that throws no uncaught errors and is loaded unobtrusively (no JavaScript event attributes in your HTML, in other words; attach events to any elements requiring interaction).
 
-2. [ ] JavaScript that uses only asynchronous methods and callbacks
+2. [x] JavaScript that uses only asynchronous methods and callbacks
 
 ### Git requirements
 
-1. [ ] Whole team: A shared team Git repository with frequent commits from each team member and meaningful commit messages that accurately reflect each set of changes.
+1. [x] Whole team: A shared team Git repository with frequent commits from each team member and meaningful commit messages that accurately reflect each set of changes.
 
-2. [ ] Each team member: An individual Git repository with feature branches, frequent commits, and meaningful commit messages that accurately reflect each set of changes that you make, including experimental work that you ultimately might not push upstream to the shared group repository.
+2. [x] Each team member: An individual Git repository with feature branches, frequent commits, and meaningful commit messages that accurately reflect each set of changes that you make, including experimental work that you ultimately might not push upstream to the shared group repository.
 
-3. [ ] All GitHub repositories (team and individual) must contain only the files and commits from this project.
+3. [x] All GitHub repositories (team and individual) must contain only the files and commits from this project.

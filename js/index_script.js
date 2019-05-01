@@ -230,6 +230,16 @@ $(document).ready(function() {
   $("#vidspg").on({
     click: function () { window.location.href='/itmd362-spring2019-project2/events/videos.html'; }
   })
+  
+  $("#2018gabtn2").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_generaladvice.html'; }
+  })
+  $("#pastpg2").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/past_events.html'; }
+  })
+  $("#vidspg2").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/videos.html'; }
+  })
 
   // ======== contact ========
   $("#contactbtn").on({  

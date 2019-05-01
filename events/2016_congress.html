@@ -4,27 +4,18 @@
     <title>Events</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="../css/resets.css" />
-    <link rel="stylesheet" media="screen" href="../css/screen.css" />
-    <link rel="stylesheet" media="screen" href="../css/home.css" />
     <link rel="stylesheet" media="screen" href="../css/events.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="../js/index_script.js"></script>
-    <script async src="../js/slideshow_script.js"></script>
-    <script async src="../js/slideshow_2nd.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
       <!-- START NAVIGATION -->
-      <!--div is not allowed in ul without li. all divs under ul outside li commented out-->
       <nav class="topnav">
-        <div id="container">
+        <div class="container">
           <button id="menu"><i class="fa fa-bars"></i></button>
           <h1 id="logo">Company</h1>
           <ul id="navbars">
@@ -34,45 +25,45 @@
             <!-- start about us menu -->
             <li>
               <a id="aboutusbtn" class="button" href="#">About Us</a>
-              <ul id="aboutusdropdown" class="dropdown">
-                <!-- about us submenu -->
-                <!--<div id="container">-->
+              <div id="aboutusdropdown" class="dropdown">
+                <ul>
+                  <!-- about us submenu -->
                   <li><a id="abouthisbtn" class="button" href="#">History</a></li>
                   <li><a id="aboutconbtn" class="button" href="#">Constitution</a></li>
                   <li><a id="aboutdirbtn" class="button" href="#">Board of Directors</a></li>
                   <li><a id="aboutjourbtn" class="button" href="#">D &amp; U Journal</a></li>
-                <!--</div>-->
-                <!-- end about us submenu -->
-              </ul>
+                  <!-- end about us submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end about us menu -->
             <!-- start events menu -->
             <li>
               <a id="eventsbtn" class="button" href="#">Events</a>
-              <ul id="eventsdropdown" class="dropdown">
-                <!-- start events  submenu -->
-                <!--<div id="container">-->
+              <div id="eventsdropdown" class="dropdown">
+                <ul>
+                  <!-- start events  submenu -->
                   <li>
                     <a id="submenuev" class="button" href="#">2018 Congress</a>
-                    <ul id="submenudropdown" class="dropdown">
-                      <!-- start events sub-submenu -->
-                      <!--<div id="container">-->
+                    <div id="submenudropdown" class="dropdown">
+                      <ul>
+                        <!-- start events sub-submenu -->
                         <li><a id="2018cpbtn" class="button submenubtn" href="#">Call for Papers</a></li>
                         <li><a id="2018gabtn" class="button submenubtn" href="#">General Advice</a></li>
                         <li><a id="2018vsbtn" class="button submenubtn" href="#">Visa for Peru</a></li>
                         <li><a id="2018srvfbtn" class="button submenubtn" href="#">Survey-Food&amp;Drinks</a></li>
                         <li><a id="2018srvhbtn" class="button submenubtn" href="#">Survey-Historical Tour</a></li>
                         <li><a id="2018srvtbtn" class="button submenubtn" href="#">Survey-Pachacamac Trip</a></li>
-                      <!--</div>-->
-                      <!-- end events sub-submenu -->
-                    </ul>
+                        <!-- end events sub-submenu -->
+                      </ul>
+                    </div>
                   </li>
                   <li><a id="2016cgbtn" class="button" href="#">2016 Congress</a></li>
                   <li><a id="pastpg" class="button" href="#">Past Events</a></li>
                   <li><a id="vidspg" class="button" href="#">Videos</a></li>
-                <!--</div>-->
-                <!-- end events submenu -->
-              </ul>
+                  <!-- end events submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end events menu -->
             <li>
@@ -82,89 +73,46 @@
         </div>
       </nav>
       <!-- END NAVIGATION -->
-
-      <!--<main id="content">-->
+      <main id="content2">
         <section>
-          <h2  class="margin">2016 Congress</h2>
+          <h2>2016 Congress</h2>
           <h5 class="centeredtext">XI ISUD World Congress</h5>
           <h5 class="centeredtext">Values and Ideals: Theory and Praxis</h5>
           <p class="subtitle centeredtext">July 11-15, 2016, Warsaw, Poland</p>
-          <h5 class="margin">Congratulations on the successful XI ISUD World Congress hosted by the Polish Academy of Sciences, the University of Warsaw, and the Philosophy for Dialogue Foundation!</h5>
+          <h5>Congratulations on the successful XI ISUD World Congress hosted by the Polish Academy of Sciences, the University of Warsaw, and the Philosophy for Dialogue Foundation!</h5>
           <p>The 2016 XI ISUD World Congress was conducted as a celebration of the Society’s founding twenty-eight years ago in Warsaw. The Congress featured a geographically and culturally diverse group of scholars representing 39 countries from North and South America, Europe, Asia, Africa, and Pacific Island nations. Approximately 145 scholars attended and presented original research at the Congress.  A spirit of good will and eagerness to engage in and cultivate inter-cultural philosophical dialogue pervaded the dynamics of the meeting.</p>
         </section>
         <section>
           <h4>CONGRESS PHOTO SHOTS</h4>
-          <section class="nopadding">
-          <!-- BEGIN SLIDESHOW -->
-            <div class="slideshow">
-              <ul id="image-list">
-                <li class="image-is-visible"><img src="../img/events/2016/1.jpg"></li>
-                <li class="image"><img src="../img/events/2016/2.jpg"></li>
-                <li class="image"><img src="../img/events/2016/3.jpg"></li>
-                <li class="image"><img src="../img/events/2016/4.jpg"></li>
-                <li class="image"><img src="../img/events/2016/5.jpg"></li>
-                <li class="image"><img src="../img/events/2016/6.jpg"></li>
-                <li class="image"><img src="../img/events/2016/7.jpg"></li>
-                <li class="image"><img src="../img/events/2016/8.jpg"></li>
-                <li class="image"><img src="../img/events/2016/9.jpg"></li>
-                <li class="image"><img src="../img/events/2016/10.jpg"></li>
-              </ul>
-              <!-- Left/right buttons -->
-              <div id="slideshow-left"><button id="slideshow-leftbtn" class="button">Left</button></div>
-              <div id="slideshow-right"><button id="slideshow-rightbtn" class="button">Right</button></div>
-            </div>
-            <!-- dots -->
-            <div id="slideshow-dots">
-              <ol id="dots-list">
-                <li class="dot-is-selected"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-              </ol>
-            </div>
-          <!-- END SLIDESHOW -->
-          </section>
+          <ul class="slideshow">
+            <li><img alt="congress image 1" src="../img/events/2016/1.jpg"></li>
+            <li><img alt="congress image 2" src="../img/events/2016/2.jpg"></li>
+            <li><img alt="congress image 3" src="../img/events/2016/3.jpg"></li>
+            <li><img alt="congress image 4" src="../img/events/2016/4.jpg"></li>
+            <li><img alt="congress image 5" src="../img/events/2016/5.jpg"></li>
+            <li><img alt="congress image 6" src="../img/events/2016/6.jpg"></li>
+            <li><img alt="congress image 7" src="../img/events/2016/7.jpg"></li>
+            <li><img alt="congress image 8" src="../img/events/2016/8.jpg"></li>
+            <li><img alt="congress image 9" src="../img/events/2016/9.jpg"></li>
+            <li><img alt="congress image 10" src="../img/events/2016/10.jpg"></li>
+          </ul>
         </section>
         <section>
           <h4>CONGRESS VIDEO CLIPS</h4>
-          <section class="nopadding">
-          <!-- BEGIN SLIDESHOW -->
-            <div class="slideshow">
-              <ul id="image-list2">
-                <!-- images -->
-                <li class="image-is-visible"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/1eCqS_Qi5AU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-                <li class="image"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/VhTUNxyncgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-                <li class="image"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/O5SgSsonraM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li> 
-              </ul>
-              <!-- Left/right buttons -->
-              <div id="slideshow-left2"><button id="slideshow-leftbtn2" class="button">Left</button></div>
-              <div id="slideshow-right2"><button id="slideshow-rightbtn2" class="button">Right</button></div>
-            </div>
-            <!-- dots -->
-            <div id="slideshow-dots">
-              <ol id="dots-list2">
-                <li class="dot-is-selected"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-              </ol>
-            </div>
-          <!-- END SLIDESHOW -->
-          </section>
+          <ul class="slideshow">
+            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/1eCqS_Qi5AU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/VhTUNxyncgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/O5SgSsonraM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+          </ul>
         </section>
         <section>
-          <h5  class="margin">Our deepest appreciation to the congress organizers, committee members whose hard work and contribution made the 2016 Congress such a successful and productive event! </h5>
-          <p class="body2 margin">CONGRESS ORGANIZERS</p>
+          <h5>Our deepest appreciation to the congress organizers, committee members whose hard work and contribution made the 2016 Congress such a successful and productive event! </h5>
+          <p class="body2">CONGRESS ORGANIZERS</p>
           <ul class="ulcontent">
             <li><p class="caption">Małgorzata Czarnocka – Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, Editor-in-Chief of Dialogue and Universalism, Poland.</p></li>
             <li><p class="caption">Charles Brown – Distinguished Professor of Philosophy, Emporia State University, U.S.A.</p></li>
           </ul>
-          <p class="body2 margin">HONORARY COMMITTEE</p>
+          <p class="body2">HONORARY COMMITTEE</p>
           <ul class="ulcontent">
             <li><p class="caption">Kevin M. Brien – Professor of Philosophy, Washington College, Maryland, U.S.A.</p></li>
             <li><p class="caption">Maria Pauline Eboh – Professor of Philosophy, Rivers State University at Port Harcourt, Nigeria.</p></li>
@@ -182,7 +130,7 @@
             <li><p class="caption">Karol Henryk Toeplitz – Professor Emeritus of Philosophy, Christian Academy of Theology, member of Advisory Editorial Council of Dialogue and Universalism, Poland.</p></li>
             <li><p class="caption">Lech Szczucki – Professor Emeritus of Philosophy, former Chairman of Institute of Philosophy and Sociology of the Polish Academy of Sciences Council, Laureate of the Foundation for Polish Science Award, Poland.</p></li>
           </ul>
-          <p class="body2 margin">ORGANIZATIONAL–PROGRAM COMMITTEE</p>
+          <p class="body2">ORGANIZATIONAL–PROGRAM COMMITTEE</p>
           <ul class="ulcontent">
             <li><p class="caption">Małgorzata Czarnocka – Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, Dialogue and Universalism Editor-in-Chief, Poland.</p></li>
             <li><p class="caption">Stanisław Czerniak — Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, President of the Philosophy for Dialogue Foundation, Poland.</p></li>
@@ -195,12 +143,12 @@
             <li><p class="caption">Halina Walentowicz – Professor of Philosophy, Institute of Philosophy, University of Warsaw, Poland.</p></li>
             <li><p class="caption">Keqian Xu – Professor, Nanjing Normal University, Nanjing, China.</p></li>
           </ul>
-          <p class="body2 margin">REVIEW PANEL OF THE ORGANIZATIONAL–PROGRAM COMMITTEE-COORDINATOR: </p>
+          <p class="body2">REVIEW PANEL OF THE ORGANIZATIONAL–PROGRAM COMMITTEE-COORDINATOR: </p>
           <ul class="ulcontent">
             <li><p class="caption">Emilija Tajsina – Professor of Philosophy, State Power Engineering University in Kazan, member of the ISUD Board of Directors, Russia.</p></li>
           </ul> 
         </section>
-      <!--</main>-->
+      </main>
     </div>
     <footer>
       <p class=caption>Site design © 2019 Careless Spiders</p>

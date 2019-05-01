@@ -1,3 +1,654 @@
+/*
+CSS to add styling for entire site.
+Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
+Date created: 4/5/2019
+Date modified: 4/24/2019
+File Name: events.css
+*/
+
+/*
+Material design scale
+https://material.io/design/typography/the-type-system.html#type-scale
+*/
+
+html {
+  box-sizing: border-box; /* Note: Using border-box instead of content-box */
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans', 'Lato', 'Oswald', sans-serif;
+  font-size: 1em; /* 16px Base font size */
+  line-height: 1.5em; /* 24px = 18px * 1.334em - Base line height */
+  text-rendering: optimizeLegibility;
+  margin-top:64px;
+}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+}
+
+main {
+  width: 100%;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+nav{
+  z-index: 1;
+}
+
+section{
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+footer{
+  padding: 1em;
+  background-color: #4a64ff;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 0px 1px #888888;
+}
+
+/* ========================  1. Scaled fonts ======================== */
+
+h1 {
+  font-size: 6em; /* 96px = 16px * 6em */
+  line-height: 6rem; /* 96px = 16px * 6em */
+  font-weight: 300; /* light */
+  letter-spacing: -0.015625em; /* -1.5 / 96px */
+  margin: 0;
+} 
+
+h1.margin{
+  margin: 0.83em 0;
+}
+
+h2 {
+  font-size: 3.75em; /* 60px = 16px * 3.75em */
+  line-height: 3.75rem;  /* 60px = 16px * 3.75em */
+  font-weight: 300; /* light */
+  letter-spacing: -.0083333333em; /* -0.5 / 60px */
+}
+
+h2.margin{
+  margin: 0.83em 0;
+}
+
+
+h3 {
+  font-size: 3em; /* 48px = 16px * 3em */
+  line-height: 3.125rem;  /* 50px = 16px * 3.125em */
+  font-weight: 400; /* regular */
+  letter-spacing: normal; /* 0 / 48px */
+}
+
+h3.margin{
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 2.125em; /* 34px = 34px * 2.125em */
+  line-height: 2.5rem;  /* 40px = 16px * 2.5em */
+  font-weight: 400; /* regular */
+  letter-spacing: 0.0073529412em; /* 0.25 / 34px */
+}
+
+h4.margin{
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 1.5em; /* 24px = 16px * 1.5em */
+  line-height: 2rem;  /* 32px = 16px * 2em */
+  font-weight: 400; /* regular */
+  letter-spacing: normal; /* 0 / 24px */
+}
+
+h5.margin{
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 1.125em; /* 20px = 16px * 1.125em */
+  line-height: 2.5rem;  /* 40px = 16px * 2.5em */
+  font-weight: 500; /* medium */
+  letter-spacing: 0.0125em; /* 0.15 / 20px */
+}
+
+h6.margin{
+  margin: 2.33em 0;
+}
+
+p {
+  font-size: 1em; /* 16px = 16px * 1em */
+  line-height: 1.5em; /* 24px = 16px * 1.5em */
+  font-weight: 400; /* regular */
+  letter-spacing: .03125em; /* .5 / 16px */
+}
+
+p.margin{
+  margin: 1em 0;
+}
+
+.body2 {
+  font-size: .875em; /* 14px = 16px * .875em */
+  line-height: 1.25rem; /* 20px = 16px * 1.25em */
+  font-weight: 400; /* regular */
+  letter-spacing: .0178571429em; /* .25 / 14px */
+}
+
+.subtitle {
+  font-size: 1em; /* 16px = 16px * 1em */
+  line-height: 1.75em; /* 28px = 16px * 1.75em */
+  font-weight: 400;
+  letter-spacing: .009375em; /* .15 / 18px */
+}
+
+.button {
+  font-size: .875em; /* 14px = 16px * .875em */
+  line-height: 2.25rem; /* 36px = 16px * 2.25em */
+  font-weight: 500; /* medium */
+  letter-spacing: .0892857143em; /* 1.25 / 14px */
+  text-transform: uppercase;
+}
+
+.caption {
+  font-size: .75em; /* 12px = 16px * .75em */
+  line-height: 1.25rem; /* 20px = 16px * 1.25em */
+  font-weight: 400; /* regular */
+  letter-spacing: .0333333333em; /* .04 / 12px */
+}
+
+.overline {
+  font-size: .75em; /* 12px = 16px * .75em */
+  line-height: 2rem; /* 32px = 16px * 2em */
+  font-weight: 500; /* regular */
+  letter-spacing: .1666666667em; /* 1.5 / 12px */
+  text-transform: uppercase;
+  padding: 0 0 1rem 0;
+}
+
+/* ========================  2. Responsive Media ======================== */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  margin: 0 auto;      
+}
+
+/* ========================  3. Navigation ======================== */
+nav{
+  overflow: hidden;
+  box-shadow: 1px 1px 4px #888888;
+  background-color: #001dca;
+  color: #ffffff;
+}
+
+#menu{
+  color: #ffffff;
+}
+
+/* Company name/logo */
+#logo{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-size: .875em; /* 14px = 16px * .875em */
+  line-height: 2.25rem; /* 36px = 16px * 2.25em */
+  font-weight: 500; /* medium */
+  letter-spacing: .0892857143em; /* 1.25 / 14px */
+  text-transform: uppercase;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+/* Menu bar*/
+#menu{
+  display: inline-block;
+  float: left;
+  text-align: left;
+  text-align: center;
+  font-size: .875em; 
+  line-height: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* remove box*/
+  border: none;
+  background: none;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+#menu i{
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+/* Sticky navigation bar */
+.topnav {
+  overflow: hidden;
+  /* sticky navigation */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topnav ul{
+  clear: both;
+}
+
+.topnav ul li{
+  
+}
+
+.topnav a {
+  display: block;
+  color: black;
+  background-color: #0745ff;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #4a64ff;
+}
+
+#navbars{
+  display: none;
+}
+
+.dropdown{
+  display: none;
+}
+
+.dropdown a {
+  background-color: #6f71ff;
+  color: white;
+  padding: 8px 12px;
+}
+
+.dropdown a:hover {
+  background-color: #9fa6ff;
+}
+
+/*===============sub-sub navbar item ============!!Edited!!*/
+#submenudropdown, #submenudropdown li a.submenubtn
+{
+  background-color: #6f71ff;
+  color: white;
+}
+#submenudropdown li a.submenubtn:hover
+{
+  background-color: #9fa6ff;
+}
+
+/* ========================  3.5 Slideshow ======================== */
+#event_signup{
+  text-align: center;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+#meet_the_team{
+  text-align: center;
+}
+
+/* BEGIN SLIDESHOW */
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+/* slideshow images */
+
+.slideshow img{
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow ul li{
+  line-height: 0;
+  height: 100%;
+}
+
+.image-is-visible{
+  display: list-item; 
+}
+
+.image{
+  display: none;
+}
+
+/* slideshow buttons */
+.slideshow .button{
+  width: 4rem;
+  border: none;
+  background: white;
+  opacity: .6;
+}
+
+#slideshow-left{
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  left: 0%;
+  z-index: 0;
+}
+
+#slideshow-right {
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  right: 0%;
+  z-index: 0;
+}
+
+/* slideshow dots */
+.dot{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: #6f71ff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.dot-is-selected{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: #001dca;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#slideshow-dots{
+  margin: .5rem;
+  clear: both;
+  display: block;
+  text-align: center;
+
+}
+
+.smallimg{
+  display: block;
+}
+
+.bigimg{
+  display: none;
+}
+
+/* END SLIDESHOw */
+
+/* BEGIN IMAGE GRID */
+
+.grid-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-col{
+  padding: 16px;
+  flex-basis: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.grid-col img{
+  width: 100%;
+  position: relative;
+  /* set this to fix sizing issues*/
+  max-width: 232px;
+  /* Round portraits */
+  border-radius: 50%;
+}
+
+.grid-container{
+  margin: 0 auto;
+}
+
+/* ======================== 3.6 Sign Up Page ======================== */
+
+#event_signup{
+  text-align: center;
+}
+
+input{
+  width: 100%
+}
+
+input.button{
+  margin: .5rem 0;
+  padding: 0 .25rem;
+}
+
+input.button{
+  max-width: 600px;
+}
+
+#signupbtn, #gotoformbtn, #submit{
+  background-color: #ffc107;
+  color: #000000;
+  border-color: #fff350;
+}
+
+/* ========================  4. media queries ======================== */
+
+
+/* ================ 600px Break Point 1: Small or larger ================ */
+@media screen and (min-width: 37.5em) {  
+
+  .dropdown{
+    display: none;
+  }
+
+  .grid-col{
+    flex-basis: 50%;
+  }
+
+  .smallimg{
+    display: none;
+  }
+
+  .bigimg{
+    display: block;
+  }
+
+}
+
+
+/* ================ 960px Break Point 2: Medium or larger ================ */
+@media screen and (min-width: 60em) {
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* move logo and menu  */
+  #menu{
+    display: none;
+    visibility: hidden;
+    vertical-align: inherit;
+  }
+
+  #logo{
+    float:left;
+    display: inline-block;
+    padding: 14px 16px;
+    margin: 0;
+  }
+
+  /* remove navbar style  */
+  .topnav ul{
+    clear: none;
+    float: right;
+    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topnav ul li{
+    display: inline-block;
+    padding-top: 0px;
+    border-top: solid 0px white;
+  }
+
+  .topnav a {
+    display: inline-block;
+    background-color: #001dca;
+  }
+
+  /* make nav bar visible */
+  #navbars{
+    display: inline-block;
+  }
+
+  .dropdown a{
+    display: none;
+  }
+
+  .container{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* make subnav bar look good */
+
+  .dropdown{
+    overflow: hidden;
+    position: fixed;
+    background-color: #0745ff;
+    text-align: right;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .dropdown li{
+    display: block;
+  }
+
+  .dropdown a {
+    background-color: #0745ff;
+    color: #ffffff;
+    display: inline-block;
+  }
+
+  #submenu{
+    display: block;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #6f71ff;
+    
+  } 
+  
+  .grid-col{
+    flex-basis: 33%;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+}
+
+
+/* =============== 1600px Break Point 3: large =============== */
+@media screen and (min-width: 100em) {
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* make nav bar visible */
+  #navbars{
+    display: inline-block;
+  }
+
+  .container{
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+}
+
+/* ================ 1920px Break Point 4: extra-large ================ */
+@media screen and (min-width: 120em) {
+
+  main {
+    max-width: 1600px;
+  }
+
+  /* make nav bar visible */
+  #navbars{
+    display: inline-block;
+  }
+
+  .container{
+    max-width: 1600px;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #aboutusdropdown ul, #eventsdropdown ul{
+    float:none;
+    max-width: 1600px;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .navbox{
+    background-color: grey;
+    color: white;
+    padding: 8px 12px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+}
+
 .centeredtext
 {
   text-align: center;

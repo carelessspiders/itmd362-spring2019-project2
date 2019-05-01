@@ -4,14 +4,9 @@
     <title>Events</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="../css/resets.css" />
-    <link rel="stylesheet" media="screen" href="../css/screen.css" />
     <link rel="stylesheet" media="screen" href="../css/events.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="../js/index_script.js"></script>
@@ -19,9 +14,8 @@
   <body>
     <div id="content" class="wrapper">
       <!-- START NAVIGATION -->
-      <!--div is not allowed in ul without li. all divs under ul outside li commented out-->
       <nav class="topnav">
-        <div id="container">
+        <div class="container">
           <button id="menu"><i class="fa fa-bars"></i></button>
           <h1 id="logo">Company</h1>
           <ul id="navbars">
@@ -31,45 +25,45 @@
             <!-- start about us menu -->
             <li>
               <a id="aboutusbtn" class="button" href="#">About Us</a>
-              <ul id="aboutusdropdown" class="dropdown">
-                <!-- about us submenu -->
-                <!--<div id="container">-->
+              <div id="aboutusdropdown" class="dropdown">
+                <ul>
+                  <!-- about us submenu -->
                   <li><a id="abouthisbtn" class="button" href="#">History</a></li>
                   <li><a id="aboutconbtn" class="button" href="#">Constitution</a></li>
                   <li><a id="aboutdirbtn" class="button" href="#">Board of Directors</a></li>
                   <li><a id="aboutjourbtn" class="button" href="#">D &amp; U Journal</a></li>
-                <!--</div>-->
-                <!-- end about us submenu -->
-              </ul>
+                  <!-- end about us submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end about us menu -->
             <!-- start events menu -->
             <li>
               <a id="eventsbtn" class="button" href="#">Events</a>
-              <ul id="eventsdropdown" class="dropdown">
-                <!-- start events  submenu -->
-                <!--<div id="container">-->
+              <div id="eventsdropdown" class="dropdown">
+                <ul>
+                  <!-- start events  submenu -->
                   <li>
                     <a id="submenuev" class="button" href="#">2018 Congress</a>
-                    <ul id="submenudropdown" class="dropdown">
-                      <!-- start events sub-submenu -->
-                      <!--<div id="container">-->
+                    <div id="submenudropdown" class="dropdown">
+                      <ul>
+                        <!-- start events sub-submenu -->
                         <li><a id="2018cpbtn" class="button submenubtn" href="#">Call for Papers</a></li>
                         <li><a id="2018gabtn" class="button submenubtn" href="#">General Advice</a></li>
                         <li><a id="2018vsbtn" class="button submenubtn" href="#">Visa for Peru</a></li>
                         <li><a id="2018srvfbtn" class="button submenubtn" href="#">Survey-Food&amp;Drinks</a></li>
                         <li><a id="2018srvhbtn" class="button submenubtn" href="#">Survey-Historical Tour</a></li>
                         <li><a id="2018srvtbtn" class="button submenubtn" href="#">Survey-Pachacamac Trip</a></li>
-                      <!--</div>-->
-                      <!-- end events sub-submenu -->
-                    </ul>
+                        <!-- end events sub-submenu -->
+                      </ul>
+                    </div>
                   </li>
                   <li><a id="2016cgbtn" class="button" href="#">2016 Congress</a></li>
                   <li><a id="pastpg" class="button" href="#">Past Events</a></li>
                   <li><a id="vidspg" class="button" href="#">Videos</a></li>
-                <!--</div>-->
-                <!-- end events submenu -->
-              </ul>
+                  <!-- end events submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end events menu -->
             <li>
@@ -80,72 +74,72 @@
       </nav>
       <!-- END NAVIGATION -->
 
-      <!--<main id="content">-->
+      <main id="content2">
         <section><!--on a mobile, rather change h2->h4, h4->h6-->
-          <h2 class="margin">2018 Congress: General Advice</h2>
+          <h2>2018 Congress: General Advice</h2>
           <div class="contentbutton" id="w100"><a class="button" href="http://congreso.pucp.edu.pe/isud/">Reserve Your Seat Now!</a></div>
-          <p class="margin">We hope that you have a pleasant and safe trip to Perú and wish to request that you please take a few minutes to read the following useful information.</p>
+          <p>We hope that you have a pleasant and safe trip to Perú and wish to request that you please take a few minutes to read the following useful information.</p>
           <p>Before travelling, make sure if you need a visa to come to Peru and that you are carrying a valid passport.</p>
-          <p class="margin">DO NOT ride a taxi outside the airport. There are several taxi companies which you can hire before leaving Immigration. The more affordable is Taxi Green.</p>
+          <p>DO NOT ride a taxi outside the airport. There are several taxi companies which you can hire before leaving Immigration. The more affordable is Taxi Green.</p>
           <ul class="ulcontent">
-            <li><h4 class="margin">HOTELS</h4>
+            <li><h4>HOTELS</h4>
               <ul class="ulcontent">
                 <li><p>The Congress has special rates on 3 hotels but you need to book them through our web page when you register. We will have return transportation from these hotels to the Congress site (PUCP’s campus) and we will provide timetables and schedules.</p></li>
                 <li><p>When arriving at the hotel, hand your passport to the receptionist. They need to photocopy it so that you can get the international visitor’s tax exemption.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">WEATHER</h4>
+            <li><h4>WEATHER</h4>
               <ul class="ulcontent">
                 <li><p>During the month of July, it is winter in Peru and temperatures reach between 57°F to 66°F (14ºC - 19ºC.). You might need to bring warm clothes because it is very humid. </p></li>
               </ul>
             </li>
-            <li><h4 class="margin">HEALTH</h4>
+            <li><h4>HEALTH</h4>
               <ul class="ulcontent">
                 <li><p>Please drink only bottled water as tap water is not recommended. Peruvian food, although very tasty, can be spicy and seasoned.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">TIME</h4>
+            <li><h4>TIME</h4>
               <ul class="ulcontent">
                 <li><p>Lima time coincides with Eastern Standard in the US and is 5 hours behind GMT.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">ELECTRIC CURRENT</h4>
+            <li><h4>ELECTRIC CURRENT</h4>
               <ul class="ulcontent">
                 <li><p>220V although most hotels have special 110V convertors.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">CURRENCY</h4>
+            <li><h4>CURRENCY</h4>
               <ul class="ulcontent">
                 <li><p>The Peruvian currency is called the New Sol, or Nuevo Sol (S/.). It can be found in denominations of 10, 20, 50, 100 and 200 bills. The Nuevo Sol can also be found in coin form 0.10, 0.20. 0.50 cents, 1.00, 2.00 and 5.00 soles. You will be able to exchange your currency for Nuevos Soles in all banks and hotels. The current exchange rate is approximately S/. 3.20 to S/. 3.25 to the US $1. When negotiating with vendors it is best to carry small amounts of money because they usually carry small amounts of change.</p>
                   <p>International credit cards such as American Express, Visa, Mastercard and Diners are accepted in most commercial establishments.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">ATTIRE</h4>
+            <li><h4>ATTIRE</h4>
               <ul class="ulcontent">
                 <li><p>Casual clothes during the meeting.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">TIPPING</h4>
+            <li><h4>TIPPING</h4>
               <ul class="ulcontent">
                 <li><p>Most restaurants include a 10% tip. The total should be around 15%. Doorkeepers should be tipped USD$ 2 per bag. Taxi drivers do not expect a tip.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">HANDICRAFTS</h4>
+            <li><h4>HANDICRAFTS</h4>
               <ul class="ulcontent">
                 <li><p>Peruvian handicrafts such as fine textiles, paintings, jewelry and pottery can be found in shops near the hotels.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">GASTRONOMY</h4>
+            <li><h4>GASTRONOMY</h4>
               <ul class="ulcontent">
                 <li><p>Perú is very well known for its great food. Although Peruvian food may be a little hot and spicy, it is very tasty. Don’t miss trying its renowned plates.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">CUSTOMS</h4>
+            <li><h4>CUSTOMS</h4>
               <ul class="ulcontent">
                 <li><p>NO objects of archaeological, historical or artistic value may be taken out of the country unless you carry the proper permit. Peru has international agreements with most countries for the confiscation and the return of the objects which have been taken abroad.</p></li>
               </ul>
             </li>
-            <li><h4 class="margin">SECURITY ADVICE</h4>
+            <li><h4>SECURITY ADVICE</h4>
               <ul class="ulcontent">
                 <li><p>Lima shares the same problems which plague any large city but if you use your common sense and have a little precaution you can avoid being a victim of any incident.</p>
                   <p>We suggest you leave your passport, airticket and valuables in the hotel´s safety box. Always carry a photocopy of your passport.</p>
@@ -155,7 +149,7 @@
             </li>
           </ul>
         </section>
-      <!--</main>-->
+      </main>
     </div>
     <footer>
       <p class=caption>Site design © 2019 Careless Spiders</p>

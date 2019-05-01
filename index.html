@@ -4,15 +4,10 @@
     <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="css/resets.css" />
     <link rel="stylesheet" media="screen" href="css/screen.css" />
-    <link rel="stylesheet" media="screen" href="css/home.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="js/index_script.js"></script>
     <script async src="js/slideshow_script.js"></script>
@@ -20,9 +15,8 @@
   <body>
     <div id="content" class="wrapper">
       <!-- START NAVIGATION -->
-      <!--div is not allowed in ul without li. all divs under ul outside li commented out-->
       <nav class="topnav">
-        <div id="container">
+        <div class="container">
           <button id="menu"><i class="fa fa-bars"></i></button>
           <h1 id="logo">Company</h1>
           <ul id="navbars">
@@ -32,45 +26,45 @@
             <!-- start about us menu -->
             <li>
               <a id="aboutusbtn" class="button" href="#">About Us</a>
-              <ul id="aboutusdropdown" class="dropdown">
-                <!-- about us submenu -->
-                <!--<div id="container">-->
+              <div id="aboutusdropdown" class="dropdown">
+                <ul>
+                  <!-- about us submenu -->
                   <li><a id="abouthisbtn" class="button" href="#">History</a></li>
                   <li><a id="aboutconbtn" class="button" href="#">Constitution</a></li>
                   <li><a id="aboutdirbtn" class="button" href="#">Board of Directors</a></li>
                   <li><a id="aboutjourbtn" class="button" href="#">D &amp; U Journal</a></li>
-                <!--</div>-->
-                <!-- end about us submenu -->
-              </ul>
+                  <!-- end about us submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end about us menu -->
             <!-- start events menu -->
             <li>
               <a id="eventsbtn" class="button" href="#">Events</a>
-              <ul id="eventsdropdown" class="dropdown">
-                <!-- start events  submenu -->
-                <!--<div id="container">-->
+              <div id="eventsdropdown" class="dropdown">
+                <ul>
+                  <!-- start events  submenu -->
                   <li>
                     <a id="submenuev" class="button" href="#">2018 Congress</a>
-                    <ul id="submenudropdown" class="dropdown">
-                      <!-- start events sub-submenu -->
-                      <!--<div id="container">-->
+                    <div id="submenudropdown" class="dropdown">
+                      <ul>
+                        <!-- start events sub-submenu -->
                         <li><a id="2018cpbtn" class="button submenubtn" href="#">Call for Papers</a></li>
                         <li><a id="2018gabtn" class="button submenubtn" href="#">General Advice</a></li>
                         <li><a id="2018vsbtn" class="button submenubtn" href="#">Visa for Peru</a></li>
                         <li><a id="2018srvfbtn" class="button submenubtn" href="#">Survey-Food&amp;Drinks</a></li>
                         <li><a id="2018srvhbtn" class="button submenubtn" href="#">Survey-Historical Tour</a></li>
                         <li><a id="2018srvtbtn" class="button submenubtn" href="#">Survey-Pachacamac Trip</a></li>
-                      <!--</div>-->
-                      <!-- end events sub-submenu -->
-                    </ul>
+                        <!-- end events sub-submenu -->
+                      </ul>
+                    </div>
                   </li>
                   <li><a id="2016cgbtn" class="button" href="#">2016 Congress</a></li>
                   <li><a id="pastpg" class="button" href="#">Past Events</a></li>
                   <li><a id="vidspg" class="button" href="#">Videos</a></li>
-                <!--</div>-->
-                <!-- end events submenu -->
-              </ul>
+                  <!-- end events submenu -->
+                </ul>
+              </div>
             </li>
             <!-- end events menu -->
             <li>
@@ -80,8 +74,7 @@
         </div>
       </nav>
       <!-- END NAVIGATION -->
-      <!--Duplicate id cannot exist in child(content) commenting main out-->
-      <!--<main id="content">-->
+      <main id="content2">
         <section id="event_signup">
           <h2>ISUD XII World Congress</h2>
           <p class="margin">Pontifical Catholic University of Peru • Lima, Peru</p>
@@ -93,13 +86,13 @@
           <div class="slideshow">
             <ul id="image-list">
               <!-- images -->
-              <li class="image-is-visible"><img src="img/image1.png" alt="Image 1"></li>
-              <li class="image"><img src="img/image2.png" alt="Image 2"></li>
-              <li class="image"><img src="img/image3.png" alt="Image 3"></li> 
+              <li class="image-is-visible"><img class="smallimg" src="img/image1small.png" alt="Image 1 Small"><img class="bigimg" src="img/image1.png" alt="Image 1"></li>
+              <li class="image"><img class="smallimg" src="img/image2small.png" alt="Image 2 Small"><img class="bigimg" src="img/image2.png" alt="Image 2"></li>
+              <li class="image"><img class="smallimg" src="img/image3small.png" alt="Image 3 Small"><img class="bigimg" src="img/image3.png" alt="Image 3"></li> 
             </ul>
             <!-- Left/right buttons -->
-            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button">Left</button></div>
-            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button">Right</button></div>
+            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button"><i class="fas fa-arrow-left"></i></button></div>
+            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button"><i class="fas fa-arrow-right"></i></button></div>
           </div>
           <!-- dots -->
           <div id="slideshow-dots">
@@ -111,53 +104,7 @@
           </div>
           <!-- END SLIDESHOW -->
         </section>
-        <section id="meet_the_team">
-          <h3 class="margin">Meet The Team</h3>
-          <!-- BEGIN IMAGE GRID -->
-          <div class="container">
-            <!-- ROW 1 -->
-            <div class="grid-row">
-              <div class="grid-col grid-container">
-                <div class="grid-col-image">
-                  <img src="img/gridimage1.jpg" alt="Image 1"></div>
-                <div class="grid-col-content container">
-                  <h5 class="body">Daniel Callegari</h5>
-                  <p class="body">Web Developer</p>
-                </div>
-              </div>
-              <div class="grid-col grid-container">
-                <div class="grid-col-image">
-                  <img src="img/gridimage1.jpg" alt="Image 1">
-                </div>
-                <div class="grid-col-content">
-                  <h5 class="body">DongBoum Shin</h5>
-                  <p class="body">Web Developer</p>
-                </div>
-              </div>
-              <div class="grid-col grid-container">
-                <div class="grid-col-image">
-                  <img src="img/gridimage3.jpg" alt="Image 1">
-                </div>
-                <div class="grid-col-content">
-                  <h5 class="body">Jacob Huebner</h5>
-                  <p class="body">"Web" Developer</p>
-                </div>
-              </div>
-              <div class="grid-col grid-container">
-                <div class="grid-col-image">
-                  <img src="img/gridimage1.jpg" alt="Image 1">
-                </div>
-                <div class="grid-col-content">
-                  <h5 class="body">Mr. Raccoon</h5>
-                  <p class="body">Product Tester</p>
-                </div>
-              </div>
-            </div>
-            <!-- ROW 2 -->
-          </div>
-          <!-- END IMAGE GRID -->
-        </section>
-      <!--</main>-->
+      </main>
     </div>
     <footer>
       <p class="caption margin">Site design © 2019 Careless Spiders</p>

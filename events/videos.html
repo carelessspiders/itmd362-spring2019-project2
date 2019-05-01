@@ -10,6 +10,7 @@
     <link rel="stylesheet" media="screen" href="../css/events.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="../js/index_script.js"></script>
+    <script async src="../js/slideshow_script.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
@@ -77,10 +78,25 @@
       <main id="content2">
         <section>
           <h2>Videos</h2>
-          <ul class="slideshow">
-            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/sF5n78x9LgE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/nWqKCXKxV1w?list=PLX3bYgpCPoZ0hZKnkfezWF5RFdW1ockSt" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-          </ul>
+          <!-- BEGIN SLIDESHOW -->
+          <div class="slideshow">
+            <ul id="image-list">
+               <!-- videos -->
+              <li class="image-is-visible"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/sF5n78x9LgE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+              <li class="image"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/nWqKCXKxV1w?list=PLX3bYgpCPoZ0hZKnkfezWF5RFdW1ockSt" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+            </ul>
+            <!-- Left/right buttons -->
+            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button"><i class="fas fa-arrow-left"></i></button></div>
+            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button"><i class="fas fa-arrow-right"></i></button></div>
+          </div>
+          <!-- dots -->
+          <div id="slideshow-dots">
+            <ol id="dots-list">
+              <li class="dot-is-selected"></li>
+              <li class="dot"></li>
+            </ol>
+          </div>
+          <!-- END SLIDESHOW -->
         </section>
         <section>
           <h6>Pawel Kuczynski: Artistic Videographer of ISUD</h6>

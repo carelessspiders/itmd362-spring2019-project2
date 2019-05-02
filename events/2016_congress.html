@@ -11,6 +11,7 @@
     <link rel="stylesheet" media="screen" href="../css/screen.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="../js/index_script.js"></script>
+    <script async src="../js/slideshow_script.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
@@ -76,44 +77,65 @@
       <!-- END NAVIGATION -->
       <main id="content2">
         <section>
-          <h2>2016 Congress</h2>
+          <h2 class="centeredtext">2016 Congress</h2>
           <h5 class="centeredtext">XI ISUD World Congress</h5>
           <h5 class="centeredtext">Values and Ideals: Theory and Praxis</h5>
           <p class="subtitle centeredtext">July 11-15, 2016, Warsaw, Poland</p>
           <h5>Congratulations on the successful XI ISUD World Congress hosted by the Polish Academy of Sciences, the University of Warsaw, and the Philosophy for Dialogue Foundation!</h5>
-          <p>The 2016 XI ISUD World Congress was conducted as a celebration of the Society’s founding twenty-eight years ago in Warsaw. The Congress featured a geographically and culturally diverse group of scholars representing 39 countries from North and South America, Europe, Asia, Africa, and Pacific Island nations. Approximately 145 scholars attended and presented original research at the Congress.  A spirit of good will and eagerness to engage in and cultivate inter-cultural philosophical dialogue pervaded the dynamics of the meeting.</p>
+          <p class="margin">The 2016 XI ISUD World Congress was conducted as a celebration of the Society’s founding twenty-eight years ago in Warsaw. The Congress featured a geographically and culturally diverse group of scholars representing 39 countries from North and South America, Europe, Asia, Africa, and Pacific Island nations. Approximately 145 scholars attended and presented original research at the Congress.  A spirit of good will and eagerness to engage in and cultivate inter-cultural philosophical dialogue pervaded the dynamics of the meeting.</p>
         </section>
         <section>
-          <h4>CONGRESS PHOTO SHOTS</h4>
-          <ul class="slideshow">
-            <li><img alt="congress image 1" src="../img/events/2016/1.jpg"></li>
-            <li><img alt="congress image 2" src="../img/events/2016/2.jpg"></li>
-            <li><img alt="congress image 3" src="../img/events/2016/3.jpg"></li>
-            <li><img alt="congress image 4" src="../img/events/2016/4.jpg"></li>
-            <li><img alt="congress image 5" src="../img/events/2016/5.jpg"></li>
-            <li><img alt="congress image 6" src="../img/events/2016/6.jpg"></li>
-            <li><img alt="congress image 7" src="../img/events/2016/7.jpg"></li>
-            <li><img alt="congress image 8" src="../img/events/2016/8.jpg"></li>
-            <li><img alt="congress image 9" src="../img/events/2016/9.jpg"></li>
-            <li><img alt="congress image 10" src="../img/events/2016/10.jpg"></li>
-          </ul>
+          <h4>Congress Videos and Photos</h4>
+          <!-- BEGIN SLIDESHOW -->
+          <div class="slideshow">
+            <ul id="image-list">
+              <!-- images -->
+              <li class="image-is-visible"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/1eCqS_Qi5AU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+              <li class="image"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/VhTUNxyncgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+              <li class="image"><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/O5SgSsonraM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
+              <li class="image"><img alt="congress image 1" src="../img/events/2016/1.jpg"></li>
+              <li class="image"><img alt="congress image 2" src="../img/events/2016/2.jpg"></li>
+              <li class="image"><img alt="congress image 3" src="../img/events/2016/3.jpg"></li>
+              <li class="image"><img alt="congress image 4" src="../img/events/2016/4.jpg"></li>
+              <li class="image"><img alt="congress image 5" src="../img/events/2016/5.jpg"></li>
+              <li class="image"><img alt="congress image 6" src="../img/events/2016/6.jpg"></li>
+              <li class="image"><img alt="congress image 7" src="../img/events/2016/7.jpg"></li>
+              <li class="image"><img alt="congress image 8" src="../img/events/2016/8.jpg"></li>
+              <li class="image"><img alt="congress image 9" src="../img/events/2016/9.jpg"></li>
+              <li class="image"><img alt="congress image 10" src="../img/events/2016/10.jpg"></li>
+            </ul>
+            <!-- Left/right buttons -->
+            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button"><i class="fas fa-arrow-left"></i></button></div>
+            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button"><i class="fas fa-arrow-right"></i></button></div>
+          </div>
+          <!-- dots -->
+          <div id="slideshow-dots">
+            <ol id="dots-list">
+              <li class="dot-is-selected"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ol>
+          </div>
+          <!-- END SLIDESHOW -->
         </section>
         <section>
-          <h4>CONGRESS VIDEO CLIPS</h4>
-          <ul class="slideshow">
-            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/1eCqS_Qi5AU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/VhTUNxyncgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-            <li><div class="iframe-cont"><iframe src="https://www.youtube.com/embed/O5SgSsonraM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></li>
-          </ul>
-        </section>
-        <section>
-          <h5>Our deepest appreciation to the congress organizers, committee members whose hard work and contribution made the 2016 Congress such a successful and productive event! </h5>
-          <p class="body2">CONGRESS ORGANIZERS</p>
+          <h4 class="margin">Our deepest appreciation to the congress organizers, committee members whose hard work and contribution made the 2016 Congress such a successful and productive event! </h4>
+          <p class="body margin">CONGRESS ORGANIZERS</p>
           <ul class="ulcontent">
             <li><p class="caption">Małgorzata Czarnocka – Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, Editor-in-Chief of Dialogue and Universalism, Poland.</p></li>
             <li><p class="caption">Charles Brown – Distinguished Professor of Philosophy, Emporia State University, U.S.A.</p></li>
           </ul>
-          <p class="body2">HONORARY COMMITTEE</p>
+          <p class="body margin">HONORARY COMMITTEE</p>
           <ul class="ulcontent">
             <li><p class="caption">Kevin M. Brien – Professor of Philosophy, Washington College, Maryland, U.S.A.</p></li>
             <li><p class="caption">Maria Pauline Eboh – Professor of Philosophy, Rivers State University at Port Harcourt, Nigeria.</p></li>
@@ -131,7 +153,7 @@
             <li><p class="caption">Karol Henryk Toeplitz – Professor Emeritus of Philosophy, Christian Academy of Theology, member of Advisory Editorial Council of Dialogue and Universalism, Poland.</p></li>
             <li><p class="caption">Lech Szczucki – Professor Emeritus of Philosophy, former Chairman of Institute of Philosophy and Sociology of the Polish Academy of Sciences Council, Laureate of the Foundation for Polish Science Award, Poland.</p></li>
           </ul>
-          <p class="body2">ORGANIZATIONAL–PROGRAM COMMITTEE</p>
+          <p class="body margin">ORGANIZATIONAL–PROGRAM COMMITTEE</p>
           <ul class="ulcontent">
             <li><p class="caption">Małgorzata Czarnocka – Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, Dialogue and Universalism Editor-in-Chief, Poland.</p></li>
             <li><p class="caption">Stanisław Czerniak — Professor of Philosophy, Institute of Philosophy and Sociology of the Polish Academy of Sciences, President of the Philosophy for Dialogue Foundation, Poland.</p></li>
@@ -144,7 +166,7 @@
             <li><p class="caption">Halina Walentowicz – Professor of Philosophy, Institute of Philosophy, University of Warsaw, Poland.</p></li>
             <li><p class="caption">Keqian Xu – Professor, Nanjing Normal University, Nanjing, China.</p></li>
           </ul>
-          <p class="body2">REVIEW PANEL OF THE ORGANIZATIONAL–PROGRAM COMMITTEE-COORDINATOR: </p>
+          <p class="body margin">REVIEW PANEL OF THE ORGANIZATIONAL–PROGRAM COMMITTEE-COORDINATOR: </p>
           <ul class="ulcontent">
             <li><p class="caption">Emilija Tajsina – Professor of Philosophy, State Power Engineering University in Kazan, member of the ISUD Board of Directors, Russia.</p></li>
           </ul> 
